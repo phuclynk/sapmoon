@@ -1,4 +1,4 @@
-module.exports = {
+{
     "env": {
         "browser": true,
         "es6": true
@@ -25,9 +25,9 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": [
+        "@typescript-eslint/indent": [
             "error",
-            "tab"
+            4
         ],
         "linebreak-style": [
             "error",
@@ -40,6 +40,7 @@ module.exports = {
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "no-unused-vars":"warn"
     }
-};
+}

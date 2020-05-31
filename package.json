@@ -10,8 +10,10 @@
   "author": "PhucTranIT",
   "license": "ISC",
   "dependencies": {
+    "@types/react": "^16.9.35",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "ts-loader": "^7.0.5",
     "typescript": "^3.9.2"
   },
   "devDependencies": {

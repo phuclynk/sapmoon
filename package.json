@@ -1,5 +1,5 @@
 {
-  "name": "sapphiremoon",
+  "name": "sapmon",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,9 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "@types/react": "^16.9.35",
+    "antd": "^4.3.0",
+    "axios": "^0.19.2",
+    "connected-react-router": "^6.8.0",
     "css-loader": "^3.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
     "style-loader": "^1.2.1",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.2"

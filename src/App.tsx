@@ -8,4 +8,7 @@ const App = () => {
     );
 };
 
+console.log(process.env.AUTHOR);
+
+
 export default App;

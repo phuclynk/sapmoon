@@ -5,11 +5,11 @@ import { Counter } from './components';
 import { store } from './state-management/store';
 
 const App = () => {
-    return (
-        <Provider store={store}>
-            <Counter/>
-        </Provider>
-    );
+  return (
+    <Provider store={store}>
+      <Counter/>
+    </Provider>
+  );
 };
 
 console.log(process.env.AUTHOR);

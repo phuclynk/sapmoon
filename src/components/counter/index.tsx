@@ -2,14 +2,14 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import './style.scss';
-import { ADD_ONE, MINUS_ONE, ADD_ONE_ASYNC } from '../../state-management/actions';
-import { action } from '../../state-management/actions';
+import { ADD_ONE, MINUS_ONE, ADD_ONE_ASYNC, MINUS_ONE_ASYNC } from '../../state-management/actions';
 
 type CounterProps = {
 
 }
 
-export const Counter = () => {
+// eslint-disable-next-line no-empty-pattern
+export const Counter = ({} : CounterProps) => {
   const dispatch = useDispatch();
   const { number } = useSelector((state : any) => state.counter);
 
@@ -20,15 +20,12 @@ export const Counter = () => {
     dispatch({ type: MINUS_ONE });
   };
   const increaseNumberAsync = () => {
-    action(ADD_ONE_ASYNC);
-    console.log('Increase Async Call');
-    // dispatch({ type: ADD_ONE });
+    dispatch({ type: ADD_ONE_ASYNC });
   };
   const decreaseNumberAsync = () => {
-    console.log('Decrease Async Call');
-    // dispatch({ type: MINUS_ONE });
+    dispatch({ type: MINUS_ONE_ASYNC });
   };
-
+  
   return (
     <div className="App" >
       <header className="App-header">

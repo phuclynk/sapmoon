@@ -1,18 +1,22 @@
-// eslint-disable-next-line no-unused-vars
-import React, { FC } from 'react';
+import React, { FunctionComponent } from 'react';
 import { useDispatch } from 'react-redux';
 
-import './style.scss';
-import { increase, decrease, increase_async, decrease_async } from '../../state-management/actions';
 import { useTypedSelector } from '@root/state-management/reducer';
-// import { useTypedSelector } from '../../state-management/reducer';
+import { 
+  decrease_async, 
+  increase_async, 
+  decrease, 
+  increase 
+} from '@root/state-management/actions';
+
+import './style.scss';
 
 type CounterProps = {
   
 }
 
 // eslint-disable-next-line no-empty-pattern
-export const Counter : FC = ({} : CounterProps) => {
+export const Counter : FunctionComponent = ({} : CounterProps) => {
   const dispatch = useDispatch();
   const { number } = useTypedSelector(state => state.counter);
 

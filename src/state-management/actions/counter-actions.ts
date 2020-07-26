@@ -19,12 +19,12 @@ export const decrease : action = () => {
 
 export const increase_async : action = () => {
   return {
-    type: MINUS_ONE_ASYNC
+    type: ADD_ONE_ASYNC
   };
 };
 
 export const decrease_async : action = () => {
   return {
-    type: ADD_ONE_ASYNC
+    type: MINUS_ONE_ASYNC
   };
 };

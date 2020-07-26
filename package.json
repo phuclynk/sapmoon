@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "jest"
+    "test": "jest",
+    "tsc": "ttsc"
   },
   "author": "PhucTranIT",
   "license": "ISC",
@@ -45,6 +46,8 @@
     "node-sass": "^4.14.1",
     "redux-devtools-extension": "^2.13.8",
     "sass-loader": "^8.0.2",
+    "ttypescript": "^1.5.10",
+    "typescript-transform-paths": "^1.1.14",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
